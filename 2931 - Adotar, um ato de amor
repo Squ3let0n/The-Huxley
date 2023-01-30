@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+    int idadeAdotante, idadeAdotado;
+  //Lembrete char � o str em C
+    char irmao_Ascendente, adocaoConjunta, casados_Uniaoestavel, consentimentoResponsavel, paisDesc, consentimentoAdotado;
+  //Lembrete chamar o char no scanf use %c
+    scanf ("%i\n%c\n%c\n%c\n%i\n%c\n%c\n%c", &idadeAdotante, &irmao_Ascendente,&adocaoConjunta, 
+    &casados_Uniaoestavel, &idadeAdotado, &paisDesc, &consentimentoResponsavel, &consentimentoAdotado);
+    if((idadeAdotante >18)&&(irmao_Ascendente=='N')&&(adocaoConjunta==casados_Uniaoestavel)&&
+    ((idadeAdotante-idadeAdotado) >16)&&(paisDesc!=consentimentoResponsavel)&&
+    ((idadeAdotado>=12 && consentimentoAdotado=='S')||(idadeAdotado<12))){
+         printf ("Pode adotar");   
+        }
+        else{
+            printf ("Nao pode adotar");
+        }
+	return 0;
+}
