@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+  int countAprovado = 0, aprovadoPort, aprovadoMat, aprovadoRed;
+  float port, mat, red ;
+
+  //aprovadoPort = 50 * 0,8;
+  //aprovadoMat = 35 * 0,35;
+  //aprovadoRed = 7;
+  do{
+    scanf("%f %f %f", &port, &mat, &red);
+  if(port >= 40 && mat>=21 && red>= 7){
+    countAprovado+=1;
+  }
+  }
+while(port>0);
+    printf("%i\n", countAprovado);
+ 
+
+
+}
